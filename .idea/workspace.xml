@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="911e0937-98b7-46a2-9b50-1538ddc976c9" name="Default" comment="removed the ngResource lib, just using regular $http to get data.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/products/productListView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angular.js" afterPath="$PROJECT_DIR$/js/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    <list default="true" id="911e0937-98b7-46a2-9b50-1538ddc976c9" name="Default" comment="WIP">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProductManagement.iws" />
@@ -47,7 +40,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-              <folding />
+              <folding>
+                <marker date="1446844362508" expanded="true" signature="255992:256010" placeholder="{...}" />
+                <marker date="1446844362508" expanded="true" signature="255992:393381" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app/products/productListView.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -561,7 +557,7 @@
       <workItem from="1446821357608" duration="14035000" />
       <workItem from="1446836793451" duration="300000" />
       <workItem from="1446837509142" duration="660000" />
-      <workItem from="1446838573853" duration="5760000" />
+      <workItem from="1446838573853" duration="5826000" />
     </task>
     <task id="LOCAL-00001" summary="issue doing inject">
       <created>1446835432114</created>
@@ -581,11 +577,17 @@
       <option name="project" value="LOCAL" />
       <updated>1446840278645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="WIP">
+      <created>1446844408189</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1446844408189</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20755000" />
+    <option name="totallyTimeSpent" value="20821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -633,7 +635,8 @@
     <MESSAGE value="issue doing inject" />
     <MESSAGE value="testing branch funciton" />
     <MESSAGE value="removed the ngResource lib, just using regular $http to get data." />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the ngResource lib, just using regular $http to get data." />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -746,7 +749,7 @@
         <state vertical-scroll-proportion="-0.1252236">
           <caret line="4338" column="3" selection-start-line="4338" selection-start-column="3" selection-end-line="4338" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -762,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/app/products/productListView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -781,7 +784,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1446844362508" expanded="true" signature="255992:256010" placeholder="{...}" />
+            <marker date="1446844362508" expanded="true" signature="255992:393381" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
