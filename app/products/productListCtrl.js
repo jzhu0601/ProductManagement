@@ -5,19 +5,18 @@
     "use strict";
     angular
         .module("productManagement")
-        .controller("ProductListCtrl", ["productResource", ProductListCtrl]);
+        .controller("ProductListCtrl", ProductListCtrl);
 
-    function ProductListCtrl(productResource) {
-        var vm = this;
+    function ProductListCtrl($scope, $http) {
 
-        productResource.query(function(data){
-            vm.products=data;
+        $http.get("https://raw.githubusercontent.com/DeborahK/AngularLOB/master/product.json").success(function (data) {
+            $scope.products = data;
         });
 
-        vm.showImage=false;
+        $scope.showImage = false;
 
-        vm.toogleImage=function(){
-            vm.showImage=!vm.showImage;
+        $scope.toogleImage = function () {
+            $scope.showImage = !$scope.showImage;
         }
     }
 })();
