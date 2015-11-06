@@ -72,4 +72,4 @@
 
         $httpBackend.whenGET(productUrl).respond(products);
     });
-}());
+})();

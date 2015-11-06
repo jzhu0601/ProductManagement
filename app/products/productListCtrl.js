@@ -5,24 +5,9 @@
     "use strict";
     angular
         .module("productManagement")
-        .controller("ProductListCtrl",ProductListCtrl);
+        .controller("ProductListCtrl", ["productResource", ProductListCtrl]);
 
-    //function ProductListCtrl(productResource){
-    //    var vm = this;
-    //
-    //    productResource.query(function(data){
-    //        vm.products=data;
-    //    });
-    //
-    //    vm.showImage=false;
-    //
-    //    vm.toogleImage=function(){
-    //        vm.showImage=!vm.showImage;
-    //    }
-    //}
-
-
-    function ProductListCtrl(){
+    function ProductListCtrl(productResource) {
         var vm = this;
 
         productResource.query(function(data){
@@ -35,4 +20,6 @@
             vm.showImage=!vm.showImage;
         }
     }
-}());
+})();
+
+
