@@ -30,6 +30,13 @@
                 templateUrl: "app/products/productEditView.html",
                 controller: "ProductEditCtrl"
             })
+
+            .state("productDetail", {
+                //:productId changes based on actual
+                url: "/products/:productId",
+                templateUrl: "app/products/productDetailView.html",
+                controller: "ProductDetailCtrl"
+            })
     }]);
 
 })();
