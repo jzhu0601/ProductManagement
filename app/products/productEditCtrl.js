@@ -3,12 +3,11 @@
  */
 (function () {
     "use strict";
-
     angular
         .module("productManagement")
-        .controller("ProductDetailCtrl", ProductDetailCtrl);
+        .controller("ProductEditCtrl", ProductEditCtrl);
 
-    function ProductDetailCtrl($scope, $http, productWithSpecificId) {
+    function ProductEditCtrl($scope, $http, productWithSpecificId) {
 
         $http.get("https://raw.githubusercontent.com/DeborahK/AngularLOB/master/product.json").success(function (data) {
 
@@ -16,9 +15,10 @@
                 var obj = data[i];
                 if (obj.productId == productWithSpecificId) {
                     $scope.product = obj;
-                    $scope.title = 'Product Detail: ' + $scope.product.productName;
-                    if ($scope.product.tags) {
-                        $scope.product.tagList = $scope.product.tags.toString();
+                    if ($scope.product && $scope.product.productId) {
+                        $scope.title = "Edit: " + $scope.product.productName;
+                    } else {
+                        $scope.title = "New Product"
                     }
                     break;
                 }
