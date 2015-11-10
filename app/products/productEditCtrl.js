@@ -24,5 +24,19 @@
                 }
             }
         });
+
+        $scope.open = function ($event) {
+            $event.preventDefault();
+            $event.stopPropagation();
+            $scope.opened = !$scope.opened;
+        };
+
+        $scope.submit = function () {
+            $scope.product.$save();
+        };
+
+        $scope.cancel = function () {
+            $state.go('productList');
+        }
     }
 })();

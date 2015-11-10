@@ -4,7 +4,7 @@
 //IIFE
 (function () {
     "use strict";
-    var app = angular.module('productManagement', ["ui.router"]);
+    var app = angular.module('productManagement', ["ui.router", "ui.mask", "ui.bootstrap"]);
 
     app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
